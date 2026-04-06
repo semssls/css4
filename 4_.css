@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background: linear-gradient(to right, #f4ece1 0%, #fcfbf7 100%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.page {
+    max-width: 1511px;
+    margin: 0 auto;
+    background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
+    border-radius: 24px;
+    padding: 32px 48px;
+}
+.oneryad{
+    display: flex;
+    justify-content: space-between;/* по горизонтали*/
+    align-items: center;/*по вертикали*/
+    flex-wrap: wrap;/*перенос*/
+    gap: 20px;/*растояние между*/
+    margin-bottom: 40px;
+}
+.oneryad-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.oneryad-logo-image {
+    width: 40px;
+    height: 40px;
+}
+.oneryad-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.oneryad-menu-link {
+    font-size: 22px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.oneryad-menu-link:hover {
+    color: #FF7E00;
+}
+.oneryad-poisk{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 249, 240, 0.1);
+    border-radius: 30px;
+    padding: 8px 16px;
+    gap: 15px;
+    box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1)
+}
+
+
+.oneryad-poisk-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.oneryad-poisk-left input {
+    background: transparent;/*прозрачный фон*/
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.oneryad-poisk-left inputt::placeholder {
+    color: #000;
+}
+
+.oneryad-poisk-line {
+    width: 1px;
+    height: 30px;
+    background: rgba(148, 140, 140, 0.31);
+}
+
+.oneryad-poisk-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.oneryad-poisk-reddot {
+    width: 18px;
+    height: 18px;
+    background: #EC2633;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.main-left {
+    flex: 1;/*гибкое расширение*/
+    min-width: 300px;
+}
+
+.main-left-head {
+    display: flex;
+    align-items: center; /*по строке*/
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.main-title { /*фаст*/
+    font-weight: 700;
+    font-size: 125px;
+    letter-spacing: -0.035em;
+    color: #FF7E00;
+    line-height: 1; 
+    position: relative;
+    
+    
+}
+
+.main-subtitle {/*фуд деливери*/
+    font-weight: 700;
+    font-size: 52px;
+    color: #2F2F2F;
+    line-height: 1;
+    position: absolute;
+    left: 320px;
+    
+    
+
+    
+}
+.main-left-opisani {
+    color: #909090;
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 30px 0;
+    max-width: 568px;
+}
+.main-left-knopki {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.main-left-knopki-buy {
+    background-color: #2F2F2F;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 84px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: inline-block;
+    box-shadow: 0px 20px 32px -8px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.main-left-knopki-buy:hover {
+    transform: scale(1.05);
+}
+
+.main-left-knopki-play {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.main-left-knopki-play:hover {
+    transform: scale(1.05);
+}
+.main-left-knopki-play-icon {
+    width: 57px;
+    height: 57px;
+    background: #FFF8F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px 36px -16px rgba(0, 0, 0, 0.1);
+}
+
+.main-left-knopki-play-txt {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2F2F2F;
+}
+.main-left-reviews {
+    margin-top: 50px;
+}
+
+.main-left-reviews-stars {
+    color: #FEBB41;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.main-left-reviews-txt {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2F2F2F;
+}
+
+.main-left-reviews-txt-sub {
+    font-size: 18px;
+    font-weight: 300;
+    color: #909090;
+}
+.main-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-right-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+/* планшеты (ширина до 1100px) */
+@media (max-width: 1100px) {
+    .page {
+        padding: 20px 30px;
+    }
+    
+    .main-title {
+        font-size: 80px;
+    }
+    
+    .main-subtitle {
+        font-size: 36px;
+    }
+    
+    .oneryad-menu {
+        gap: 30px;
+    }
+    
+    .oneryad-menu-link {
+        font-size: 18px;
+    }
+}
+
+/* телефоны (ширина до 600px) */
+@media (max-width: 600px) {
+    .page {
+        padding: 15px;
+    }
+    
+    .oneryad {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .oneryad-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-title {
+        font-size: 48px;
+    }
+    
+    .main-subtitle {
+        font-size: 28px;
+    }
+    
+    .main-left-opisani {
+        font-size: 16px;
+    }
+    
+    .main-left-knopki {
+        justify-content: center;
+    }
+    
+    .main-left-knopki-buy {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .main-left-knopki-play-txt {
+        font-size: 16px;
+    }
+    
+    .main-left-knopki-play-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .main-left-reviews-stars {
+        font-size: 18px;
+    }
+    
+    .main-left-reviews-txt,
+    .main-left-reviews-txt-sub {
+        font-size: 14px;
+    }
+    
+    /* Отключаем несущественные элементы */
+    .header-poisk-line {
+        display: none;
+    }
+    
+    .oneryad-poisk-reddot {
+        width: 14px;
+        height: 14px;
+        font-size: 8px;
+        top: -8px;
+        right: -8px;
+    }
+}
